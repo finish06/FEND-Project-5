@@ -19,7 +19,8 @@ initMap = () => {
       self.newMap = L.map('map', {
         center: [restaurant.latlng.lat, restaurant.latlng.lng],
         zoom: 16,
-        scrollWheelZoom: false
+        scrollWheelZoom: false,
+        zoomControl: false
       });
       L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.jpg70?access_token={mapboxToken}', {
         mapboxToken: 'pk.eyJ1IjoiZmluaXNoMDYiLCJhIjoiY2p6anVrMTZsMGR4aDNjcHBoc2w5dWxucCJ9.Vk6oWga5GtspYS3Nq3qo4g',
@@ -28,6 +29,9 @@ initMap = () => {
           '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
           'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
         id: 'mapbox.streets'    
+      }).addTo(newMap);
+      L.control.zoom({
+        position: 'bottomright'
       }).addTo(newMap);
       fillBreadcrumb();
       DBHelper.mapMarkerForRestaurant(self.restaurant, self.newMap);
