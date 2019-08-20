@@ -154,6 +154,7 @@ createReviewHTML = (review) => {
   const li = document.createElement('li');
   const name = document.createElement('p');
   name.innerHTML = review.name;
+  name.className = "reviewer_name"
   li.appendChild(name);
 
   const date = document.createElement('p');
