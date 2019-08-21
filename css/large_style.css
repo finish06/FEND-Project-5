@@ -4,6 +4,8 @@
 .container {
   display: flex;
   flex-wrap: wrap;
+}
+.reverse {
   flex-direction: row-reverse;
 }
 body,td,th,p{
@@ -213,7 +215,7 @@ nav h1 a {
 .inside #map-container {
   background: blue none repeat scroll 0 0;
   width:45%;
-  height: 1000px;
+  height: 1100px;
   margin-right: 3%;
   margin-left: 1.5%
 }
@@ -242,7 +244,7 @@ nav h1 a {
 	width: 100%;
 }
 #restaurant-address {
-  font-size: 1rem;
+  font-size: 1.7rem;
   margin: 10px 0px;
   width: 100%
 }
@@ -259,6 +261,8 @@ nav h1 a {
 	width: 100%;
 }
 #restaurant-container {
+  display: flex;
+  flex-wrap: wrap;
   text-align: center;
   margin: auto;
   margin-left: 3%;
@@ -280,21 +284,25 @@ nav h1 a {
   padding-bottom: 1pt;
   margin-bottom: 0;
   margin-top: 10px;
+  text-align: center;
 }
 #reviews-list {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   margin-bottom: 80px;
   padding: 0;
 }
 #reviews-list li {
+  width:30%;
   background-color: #fff;
   border: 2px solid #f3f3f3;
   display: block;
   list-style-type: none;
-  margin: 0 0 30px;
+
   overflow: hidden;
-  width: 85%;
   border-radius: 15px 50px 30px 5px;
+  margin: 1%;
 }
 #reviews-list li p {
   padding: 0 10px 10px 20px;
