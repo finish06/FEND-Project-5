@@ -26,7 +26,8 @@ a {
 	text-decoration: none;
 }
 a:hover, a:focus {
-	color: #3397db;
+  color: #3397db;
+  border: 5px solid blue;
 	text-decoration: none;
 }
 a img{
@@ -147,6 +148,10 @@ nav h1 a {
   margin-right: auto;
   padding: 0 10px;
   width: 300px;
+}
+#neighborhoods-select:focus, #cuisines-select:focus {
+  border: 5px solid blue;
+	text-decoration: none;
 }
 
 /* ====================== Restaurant Listing ====================== */
