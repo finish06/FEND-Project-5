@@ -44,7 +44,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   background-color: #f3f3f3;
   min-height: 100%;
   position: relative;
-  top: 131px;
+  top: 181px;
 }
 #footer {
   background-color: #444;
@@ -62,7 +62,9 @@ body header {
   width: 100%;
   height: 131px;
 }
-
+.front-page-header {
+  height: 181px !important;
+}
 .title {
   width: 100%;
   height: 131px;
@@ -217,6 +219,7 @@ body header {
 }
 .inside #map-container {
   background: blue none repeat scroll 0 0;
+  width: 100%;
 }
 .inside #map {
   background-color: #ccc;
